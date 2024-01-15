@@ -5,5 +5,5 @@ const meals = (req, res) => {
   };
   
   module.exports = {
-    meals,
+    meals
   };

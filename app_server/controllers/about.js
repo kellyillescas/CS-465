@@ -1,6 +1,7 @@
 /* GET about view */ 
 const about = (req, res) => {    
-  res.render('about', { title: 'Travlr Getaways' }); 
+  pageTitle = process.env.npm_package_description + ' - About';
+  res.render('about', { title: pageTitle}); 
 }; 
 
 module.exports = {    

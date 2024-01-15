@@ -5,5 +5,5 @@ const news = (req, res) => {
   };
   
   module.exports = {
-    news,
+    news
   };
