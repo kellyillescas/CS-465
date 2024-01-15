@@ -1,11 +1,9 @@
-const packageJson = require('../../package.json');
-
-/* GET about view. */
+/* GET About View */
 const about = (req, res) => {
-    pageTitle = packageJson.description + ' | About';
-    res.render('about', { title: pageTitle });
+  pageTitle = process.env.npm_package_description + " - About"; // process.env.npm_package_description can only be accessed if you use 'npm start' *nodemon will not work
+  res.render("about", { title: pageTitle });
 };
 
 module.exports = {
-    about
+  about,
 };
