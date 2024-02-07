@@ -4,7 +4,7 @@ var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const hbs = require("hbs");
-require('./app.api/models/db');
+require('./app_api/models/db');
 
 var indexRouter = require("./app_server/routes/index");
 var usersRouter = require("./app_server/routes/users");
@@ -14,7 +14,7 @@ var newsRouter = require("./app_server/routes/news");
 var mealsRouter = require("./app_server/routes/meals");
 var contactRouter = require("./app_server/routes/contact");
 var aboutRouter = require("./app_server/routes/about");
-const apiRouter = require("./app_api/routes/index");
+var apiRouter = require("./app_api/routes/index");
 
 var app = express();
 
