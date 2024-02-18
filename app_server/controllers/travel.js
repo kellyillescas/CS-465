@@ -22,7 +22,7 @@ const renderTravelList = (rec, res, responseBody) => {
   });
 };
 
-/* GET travel list view*/
+/* get travel list*/
 const travelList = (req, res) => {
   const path = "/api/trips";
   const requestOptions = {
