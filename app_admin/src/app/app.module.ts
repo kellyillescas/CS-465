@@ -23,6 +23,7 @@ import { LoginComponent } from './login/login.component';
     EditTripComponent,
     NavbarComponent,
     HomeComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
